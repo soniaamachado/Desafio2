@@ -1,0 +1,10 @@
+body{
+    margin-top:40px;
+}
+
+.lista{
+    display: inline;
+}
+a:link{
+    color: black;
+}

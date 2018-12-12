@@ -1,0 +1,44 @@
+.nav{
+    background-color: white;
+}
+.nav-link a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+a:active{
+    color: tomato;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: tomato;
+    text-decoration: none;
+}
+a .Selected{
+    color: tomato;
+}
+
+.red{
+    color: tomato;
+}
+
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.pagination {
+    margin-bottom: 30px;
+}
