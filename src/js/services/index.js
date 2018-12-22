@@ -1,5 +1,5 @@
-import { ENDPOINT } from '../constants/services'
+import {ENDPOINT, USER_ENDPOINT} from '../constants/services'
 
 export function fetchAll() {
-    return fetch(ENDPOINT).then(response => response.json(), );
+    return fetch(ENDPOINT, USER_ENDPOINT).then(response => response.json(), );
 }

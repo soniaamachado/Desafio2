@@ -17,8 +17,8 @@ function* fetchArticles() {
     }
 }
 
-function* mySaga() {
+function* mySagaArticles() {
     yield takeLatest(FETCH_ARTICLES, fetchArticles);
 }
 
-export default mySaga;
+export default mySagaArticles;

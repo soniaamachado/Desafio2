@@ -7,7 +7,7 @@ const initialState = {
     articles: []
 };
 
-const rootReducer = (state = initialState, action) => {
+const articleReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_ARTICLE:
             console.log('add', action.payload);
@@ -23,4 +23,4 @@ const rootReducer = (state = initialState, action) => {
     }
 };
 
-export default rootReducer;
+export default articleReducer;
