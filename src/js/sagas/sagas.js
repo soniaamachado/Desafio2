@@ -5,7 +5,7 @@ import mySagaUsers from './users';
 
 export default function* rootSaga () {
     yield [
-        fork(mySagaArticles), // saga1 can also yield [ fork(actionOne), fork(actionTwo) ]
+        fork(mySagaArticles),
         fork(mySagaUsers),
     ];
 }

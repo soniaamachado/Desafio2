@@ -28,9 +28,9 @@ class ConnectedList extends Component {
     }
 
     componentDidMount() {
-        if (this.props.articles.length==0){
+        if (this.props.articles.length == 0) {
 
-        this.props.fetchArticles({type: 'FETCH_ARTICLES'});
+            this.props.fetchArticles({type: 'FETCH_ARTICLES'});
         }
     }
 
@@ -38,23 +38,20 @@ class ConnectedList extends Component {
         const articles = this.props.articles;
         return (
             <div className="row">
-                        {articles.map((el, index) => (
-                            <div className="col-lg-3 col-md-4 col-sm-6portfolio-item" style={{marginBottom:'35px'}}>
-                            <div  className="card h-100">
-                                <Link  className='adName' to = {{pathname: `detail/${el.id}`, query: { id: el.id}}}>
+                this.state.data.map((item,i) => <li key={i}>Test</li>)
+                    <div className="col-lg-3 col-md-4 col-sm-6portfolio-item" style={{marginBottom: '35px'}}>
+                        <div className="card h-100">
+                            <Link className='adName' to={{pathname: `detail/${el.id}`, query: {id: el.id}}}>
                                 <a href="#"><img className="card-img-top" src={el.img_url} alt=""/> </a>
                                 <div className="card-body">
-                                    <h4 className="card-title" style={{color:'tomato'}}>
+                                    <h4 className="card-title" style={{color: 'tomato'}}>
                                         {el.title}
                                     </h4>
                                     <p className="card-text">{el.resume}</p>
                                 </div>
-                                </Link>
-
-                            </div>
-                            </div>
-                    ))
-                }
+                            </Link>
+                        </div>
+                    </div>
             </div>
         );
     }
